@@ -47,7 +47,7 @@ function phpfmg_form( $sErr = false ){
 </li>
 
 <li class='field_block' id='field_2_div'><div class='col_label'>
-	<label class='form_field'>Platform Suggestion</label> <label class='form_required' >*</label> </div>
+	<label class='form_field'>Suggestion</label> <label class='form_required' >*</label> </div>
 	<div class='col_field'>
 	<textarea name="field_2" id="field_2" rows=4 cols=25 class='text_area'><?php  phpfmg_hsc("field_2"); ?></textarea>
 
