@@ -1,0 +1,321 @@
+<?php
+    if (isset($_POST["submit"])) {
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $message = $_POST['message'];
+        $human = intval($_POST['human']);
+        $from = 'Demo Contact Form'; 
+        $to = 'example@bootstrapbay.com'; 
+        $subject = 'Message from Contact Demo ';
+        
+        $body = "From: $name\n E-Mail: $email\n Message:\n $message";
+ 
+        // Check if name has been entered
+        if (!$_POST['name']) {
+            $errName = 'Please enter your name';
+        }
+        
+        // Check if email has been entered and is valid
+        if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+            $errEmail = 'Please enter a valid email address';
+        }
+        
+        //Check if message has been entered
+        if (!$_POST['message']) {
+            $errMessage = 'Please enter your message';
+        }
+        //Check if simple anti-bot test is correct
+        if ($human !== 5) {
+            $errHuman = 'Your anti-spam is incorrect';
+        }
+ 
+// If there are no errors, send the email
+if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
+    if (mail ($to, $subject, $body, $from)) {
+        $result='<div class="alert alert-success">Thank You! I will be in touch</div>';
+    } else {
+        $result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later</div>';
+    }
+}
+    }
+?>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="keywords" content="UCF SGA, Jacob Milich, Jake Milich, SGA elections 2016, Elaine Sarlo, University of central florida sga 2016">
+    <meta name="description" content="This is the website for the campaign of Jake Milich and Elaine Sarlo for the UCF SGA elections for spring of 2016...">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Jake Milich & Elaine Sarlo; SGA Spring 2016 Elections</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/one-page-wonder.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Welcome!</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#platform">Platform</a>
+                    </li>
+                    <li>
+                    	<a href="#record">Senate Voting Record</a>
+                    </li>
+                    <li>
+                    	<a href="#suggestions">Platform suggestions</a>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Full Width Image Header -->
+    <header class="header-image">
+        <div class="headline">
+            <div class="container">
+                <h1>Jake and Elaine </h1>
+                <h2>Integrity, Service, Transparency</h2>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <hr class="featurette-divider">
+
+        <!-- First Featurette -->
+        <div class="featurette" id="about">
+        <h2>The Candidates</h2>
+        <div class="info-bg">
+        <div class="row">
+         <div class="col-md-2">
+            <img class="featurette-image img-circle img-responsive" src="Images/headshot.jpg">
+            
+            </div>
+            <div class="col-md-4"><h2 class="featurette-heading">Jake Milich</h2>
+            <ul><li>Served 5 years in the United States Marine Corps</li>
+				<li>Former President of Phi Delta Theta</li>
+				<li>Chairman of the Golden Rule Review Committee</li>
+				<li>College of Business Administration Senator Seat #5</li>
+                </ul>
+        </div>
+        <div class="col-md-2">
+            <img class="featurette-image img-circle img-responsive" src="Images/Elaine.jpeg">
+           
+            </div>
+            <div class="col-md-4"> <h2 class="featurette-heading">
+Elaine Sarlo</h2>
+                                                                  
+            <ul><li>College Republican President</li>
+				<li>Former CUFI Vice President</li>
+				<li>Field Director for Americans for Prosperity</li>
+				<li>Communications Director for Paulson for Mayor</li>
+                <li>Field Director for Consulting Firms</li>
+                <li>Lobbied at state and federal level</li>
+                </ul>
+        </div>
+
+</div></div></div>
+        <hr class="featurette-divider">
+        <!-- Second Featurette --><div class="container">
+        <div class="featurette" id="platform">
+        <h2>The Platform</h2>
+        <div class="info-bg">
+        <div class="col-md-6">
+	<p><strong>Safety</strong></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Promote CPR/First Aid classes and provide additional AEDs around campus</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Coordinate with OCSO to increase security for students living off campus</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Provide additional emergency preparedness training</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Continue to install cameras in parking garages</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Promote Safe Ride program and ensure it is easily accessible</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Install more lighting on campus</span></li>
+</ul>
+<p><strong><strong>&nbsp;</strong></strong></p>
+<p><strong>Resources</strong></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Provide additional resources to transfer and veteran students</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Provide SGA support/resources to regional campuses</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Expand variety of SARC tutoring resources and designate additional study areas</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Improve classroom and Student Union room reservation system</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Host joint diversity initiatives with RSOs, agencies, and SGA</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Provide opportunity for students to register to vote at orientation</span></li>
+</ul>
+<p><strong><strong>&nbsp;</strong></strong></p>
+<p><strong>Representation</strong></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Solicit student input on issues through surveys</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Hold UCF administration accountable</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Reform and update the UCF Golden Rule</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Create International Student Affairs Coordinator cabinet position</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Create Graduate Student Affairs Coordinator cabinet position</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Create Fraternity and Sorority Affairs Coordinator cabinet position</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Actively seek to fill all SGA positions</span></li>
+</ul>
+<p><strong><strong>&nbsp;</strong></strong></p>
+<p><strong>School Pride</strong></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Distribute more ducks during Spirit Splash</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Transportation to spirit events from regional campuses</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Protect student tailgating rights</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">T-shirt exchange program - Exchange T-shirts from other colleges for UCF T-shirts</span></li>
+</ul>
+<p><strong><strong>&nbsp;</strong></strong></p>
+</div>
+<div class="col-md-6">
+<p><strong>Quality of Life</strong></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Strengthen communication with RWC to accommodate student needs</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Distribute more ducks during Spirit Splash</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Oppose new construction without first adding sufficient parking</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Protect student tailgating rights</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Better selection of gym equipment and better gym hours</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Improve bus schedule to and from Rosen campus</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Increase quantity of phone charging stations on campus</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Encourage local restaurants to provide student discounts</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Knightro&rsquo;s Suits - A donated suit/professional clothes rental program</span></li>
+</ul>
+<p><strong><strong>&nbsp;</strong></strong></p>
+<p><strong>Transparency</strong></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Require cabinet members to sign waiver to allow their names to be shown on all SGA documents</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Continue platform tracker on SGA website</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Host monthly town hall meetings</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Host press conferences and increase contact with media</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Timely email updates (Activities and Service Fee Expenditure Report</span></li>
+</ul>
+<p><strong><strong>&nbsp;</strong></strong></p>
+<p><strong>Advocacy</strong></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Advocate for students during ongoing Aramark/Student Union Expansion negotiations</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Advocate for tax free textbooks and improved textbook affordability</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Advocate for no increase in cost of tuition</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Advocate for more transparent student conduct process</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Advocate for the construction of Greek Park Two</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Advocate for removal of required summer classes</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Advocate for the elimination of the Fraternity and Sorority Moratorium</span></li>
+</ul>
+    </div></div></div>
+    <hr class="featurette-divider">
+        <!-- Second Featurette --><div class="container">
+        <div class="featurette" id="record">
+        <h2>The Senate Voting Record</h2>
+        <div class="info-bg">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus lacus nec turpis dapibus, quis facilisis libero posuere. Duis non convallis tellus. Cras ullamcorper volutpat velit at efficitur. Sed euismod nulla quam. Duis venenatis nibh nec velit volutpat ultricies. Nulla facilisi. Vestibulum laoreet vitae tortor vitae sodales. Praesent eget vulputate sem, vitae vestibulum ipsum. Vivamus tristique mollis nisi. Cras turpis ligula, varius nec placerat sed, pulvinar in elit. Quisque id urna turpis. Vestibulum tincidunt libero nec arcu aliquet tincidunt. Nunc dictum mi in finibus tempor. 
+        </div>
+        </div>
+  </div>
+  
+  <hr class="featurette-divider">
+        <!-- fourth Featurette --><div class="container">
+        <div class="featurette" id="suggestions">
+        <h2>The Senate Voting Record</h2>
+        <div class="info-bg">
+        <form class="form-horizontal" role="form" method="post" action="index.php">
+    <div class="form-group">
+        <label for="name" class="col-sm-2 control-label">Name</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
+            <?php echo "<p class='text-danger'>$errName</p>";?>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="email" class="col-sm-2 control-label">Email</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="<?php echo htmlspecialchars($_POST['email']); ?>">
+            <?php echo "<p class='text-danger'>$errEmail</p>";?>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="message" class="col-sm-2 control-label">Message</label>
+        <div class="col-sm-10">
+            <textarea class="form-control" rows="4" name="message"><?php echo htmlspecialchars($_POST['message']);?></textarea>
+            <?php echo "<p class='text-danger'>$errMessage</p>";?>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
+            <?php echo "<p class='text-danger'>$errHuman</p>";?>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-10 col-sm-offset-2">
+            <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-10 col-sm-offset-2">
+            <?php echo $result; ?>    
+        </div>
+    </div>
+</form> 
+
+
+        </div>
+        </div>
+  </div>
+  
+
+  
+<!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Jake & Elaine 2016</p>
+                    <i class="fa fa-instagram">asd</i> 
+                </div>
+            </div>
+      </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+</div>
+</body>
+
+</html>
+
+  			
