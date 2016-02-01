@@ -13,10 +13,14 @@ border: 20px solid #fff;
 }
 
 .info-bg{
-background:#000;
-padding:1em;
+background:rgba(0,0,0,.7);;
+padding:2em;
 display:inline-block;
 color:#FFf;
+padding-right: auto;
+    padding-left: auto;
+    margin-right: auto;
+    margin-left: 10px;
 }
 .info-bg h2{
 	color:#FFC600;
@@ -59,6 +63,9 @@ color:#FFf;
 
 .featurette {
     overflow: hidden;
+	background-image:url(../Images/UCF_StudentUnion.jpg);
+	background-repeat: no-repeat;
+	align-items: center;
 }
 
 .featurette-image.pull-left {

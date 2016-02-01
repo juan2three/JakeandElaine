@@ -69,7 +69,7 @@ mark {
     background: #ff0
 }
 small {
-    font-size: 80%
+    font-size: 100%
 }
 sub,
 sup {
@@ -1077,7 +1077,7 @@ th {
     box-sizing: border-box
 }
 html {
-    font-size: 10px;
+    font-size: 14px;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 }
 body {
@@ -1582,8 +1582,15 @@ pre code {
     overflow-y: scroll
 }
 .container {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: auto;
+    padding-left: auto;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.container-header {
+    padding-right: auto;
+    padding-left: auto;
     margin-right: auto;
     margin-left: auto;
 
@@ -1600,7 +1607,7 @@ pre code {
 }
 @media (min-width: 1200px) {
     .container {
-        width: 1170px
+        width: 1170px;
     }
 }
 .container-fluid {
@@ -3697,7 +3704,7 @@ tbody.collapse.in {
 .dropdown-header {
     display: block;
     padding: 3px 20px;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.42857143;
     color: #777;
     white-space: nowrap
