@@ -1,70 +1,32 @@
-<?php
-    if (isset($_POST["submit"])) {
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $message = $_POST['message'];
-        $human = intval($_POST['human']);
-        $from = 'Demo Contact Form'; 
-        $to = 'example@bootstrapbay.com'; 
-        $subject = 'Message from Contact Demo ';
-        
-        $body = "From: $name\n E-Mail: $email\n Message:\n $message";
- 
-        // Check if name has been entered
-        if (!$_POST['name']) {
-            $errName = 'Please enter your name';
-        }
-        
-        // Check if email has been entered and is valid
-        if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-            $errEmail = 'Please enter a valid email address';
-        }
-        
-        //Check if message has been entered
-        if (!$_POST['message']) {
-            $errMessage = 'Please enter your message';
-        }
-        //Check if simple anti-bot test is correct
-        if ($human !== 5) {
-            $errHuman = 'Your anti-spam is incorrect';
-        }
- 
-// If there are no errors, send the email
-if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
-    if (mail ($to, $subject, $body, $from)) {
-        $result='<div class="alert alert-success">Thank You! I will be in touch</div>';
-    } else {
-        $result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later</div>';
-    }
-}
-    }
-?>
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<meta name="keywords" content="UCF SGA, Jacob Milich, Jake Milich, SGA elections 2016, Elaine Sarlo, University of central florida sga 2016">
+	<meta name="keywords" content="UCF SGA, Jacob Milich, Jake Milich, SGA elections 2016, Elaine Sarlo, University of central florida sga 2016, Chris and Rachel 2016">
     <meta name="description" content="This is the website for the campaign of Jake Milich and Elaine Sarlo for the UCF SGA elections for spring of 2016...">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Jake Milich & Elaine Sarlo; SGA Spring 2016 Elections</title>
+    <title>Jake Milich & Elaine Sarlo; UCF SGA Spring 2016 Elections</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/one-page-wonder.css" rel="stylesheet">
+    
+    <!--icons CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
+
+
+
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -89,13 +51,18 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
                         <a href="#platform">Platform</a>
                     </li>
                     <li>
+                    	<a href="#endorsements">Endorsements</a
+                    </li>
+                    <li>
                     	<a href="#record">Senate Voting Record</a>
                     </li>
                     <li>
-                    	<a href="#suggestions">Platform suggestions</a>
-                    <li>
-                        <a href="#contact">Contact</a>
+                        <a href="#suggestions">Platform Suggestions</a>
                     </li>
+                    <li>
+                        <a href="#find us">Follow Us</a>
+                        </li>
+                    
                     
                 </ul>
             </div>
@@ -110,6 +77,10 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
             <div class="container">
                 <h1>Jake and Elaine </h1>
                 <h2>Integrity, Service, Transparency</h2>
+               
+                <a href="https://instagram.com/JakeandElaine"><i class="fa fa-instagram fa-3x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://www.facebook.com/jakeandelaine/"><i class=" fa fa-facebook fa-3x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://twitter.com/JakeandElaine"><i class=" fa fa-twitter fa-3x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
             </div>
         </div>
     </header>
@@ -120,9 +91,8 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
         <hr class="featurette-divider">
 
         <!-- First Featurette -->
-        <div class="featurette1">
         <div class="featurette" id="about">
-        <h2>The Candidatess</h2>
+        <h2>The Candidates</h2>
         <div class="info-bg">
         <div class="row">
          <div class="col-md-2">
@@ -130,10 +100,13 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
             
             </div>
             <div class="col-md-4"><h2 class="featurette-heading">Jake Milich</h2>
+            <h3>Presidential Candidate</h3>
+            <br>
             <ul><li>Served 5 years in the United States Marine Corps</li>
-				<li>Former President of Phi Delta Theta</li>
+				<li>President of Phi Delta Theta 2014-2015</li>
 				<li>Chairman of the Golden Rule Review Committee</li>
-				<li>College of Business Administration Senator Seat #5</li>
+				<li>Senator for the College of Business Administration</li>
+				<li>Greek Campus Leader of the Year 2015</li>
                 </ul>
         </div>
         <div class="col-md-2">
@@ -142,22 +115,24 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
             </div>
             <div class="col-md-4"> <h2 class="featurette-heading">
 Elaine Sarlo</h2>
+<h3>Vice Presidential Candidate</h3>
+<br>
                                                                   
             <ul><li>College Republican President</li>
-				<li>Former CUFI Vice President</li>
 				<li>Field Director for Americans for Prosperity</li>
 				<li>Communications Director for Paulson for Mayor</li>
                 <li>Field Director for Consulting Firms</li>
                 <li>Lobbied at state and federal level</li>
                 </ul>
         </div>
-</div>
+
 </div></div></div>
         <hr class="featurette-divider">
-        <!-- Second Featurette --><div class="container">
+        <!-- Second Featurette -->
         <div class="featurette" id="platform">
-        <h2>The Platform</h2>
+        <h2>The Platform</h2><div class="row">
         <div class="info-bg">
+        
         <div class="col-md-6">
 	<p><strong>Safety</strong></p>
 <ul>
@@ -184,7 +159,7 @@ Elaine Sarlo</h2>
 <li style="font-weight: 400;"><span style="font-weight: 400;">Solicit student input on issues through surveys</span></li>
 <li style="font-weight: 400;"><span style="font-weight: 400;">Hold UCF administration accountable</span></li>
 <li style="font-weight: 400;"><span style="font-weight: 400;">Reform and update the UCF Golden Rule</span></li>
-<li style="font-weight: 400;"><span style="font-weight: 400;">Create International Student Affairs Coordinator cabinet position</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Create International, Transfer, & Veteran Student Affairs Coordinator cabinet position</span></li>
 <li style="font-weight: 400;"><span style="font-weight: 400;">Create Graduate Student Affairs Coordinator cabinet position</span></li>
 <li style="font-weight: 400;"><span style="font-weight: 400;">Create Fraternity and Sorority Affairs Coordinator cabinet position</span></li>
 <li style="font-weight: 400;"><span style="font-weight: 400;">Actively seek to fill all SGA positions</span></li>
@@ -203,7 +178,6 @@ Elaine Sarlo</h2>
 <p><strong>Quality of Life</strong></p>
 <ul>
 <li style="font-weight: 400;"><span style="font-weight: 400;">Strengthen communication with RWC to accommodate student needs</span></li>
-<li style="font-weight: 400;"><span style="font-weight: 400;">Distribute more ducks during Spirit Splash</span></li>
 <li style="font-weight: 400;"><span style="font-weight: 400;">Oppose new construction without first adding sufficient parking</span></li>
 <li style="font-weight: 400;"><span style="font-weight: 400;">Protect student tailgating rights</span></li>
 <li style="font-weight: 400;"><span style="font-weight: 400;">Better selection of gym equipment and better gym hours</span></li>
@@ -231,79 +205,94 @@ Elaine Sarlo</h2>
 <li style="font-weight: 400;"><span style="font-weight: 400;">Advocate for the construction of Greek Park Two</span></li>
 <li style="font-weight: 400;"><span style="font-weight: 400;">Advocate for removal of required summer classes</span></li>
 <li style="font-weight: 400;"><span style="font-weight: 400;">Advocate for the elimination of the Fraternity and Sorority Moratorium</span></li>
-</ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Advocate for the elimination of the excess credit hour surcharge</span></li>
+
+<ul>
     </div></div></div>
+    
     <hr class="featurette-divider">
-        <!-- Second Featurette --><div class="container">
+        <!-- Second Featurette -->
+        <div class="featurette" id="endorsements">
+        <h2>Endorsements</h2>
+        <div class="info-bg">
+        <div class="row">
+        <div class="col-lg-12">
+        <p>
+        <h2>Jake & Elaine have been endorsed by these student organizations</h2>
+	<p>
+		Lorem ipsum dolor sit amet, quot tractatos nam no. Cum id dicunt euripidis, detraxit explicari vis ut. Pro ea pertinax interesset, consul indoctum inciderint his ne, diam laoreet singulis in qui. An vero fierent nam. Et sit quis tollit, nisl prima tantas mei ad.
+
+Vis reque nobis ut, sit dolore feugiat intellegat te, vel mollis deseruisse te. Nam eu mucius expetendis. Ea nam gubergren scripserit, atqui abhorreant eam ei. Ei sed dolorem appareat singulis, an ius iusto facilisis. Ne usu dicta solet nullam.
+
+Unum modus omnesque ex eos. Nam an nisl facer, ius vero omnium ne. Ridens consetetur no eam. Ei nam omnis nonumy, id accumsan petentium has.
+
+Mei no audire utroque, id ius atomorum maluisset consequuntur, est quaeque conceptam intellegat ea. Quot adipisci delicata vel ut, nusquam nominavi mandamus vis in, mea oporteat definiebas instructior ei. Cu pro nisl constituto, autem liber dicit eos ex, simul causae an est. Eu saperet labores utroque quo, id pri inani graece. Vitae molestiae vis an, repudiandae ullamcorper vis ad, at eos ipsum debitis eleifend.
+
+Has in porro constituam theophrastus, in ius ipsum tempor deserunt. Mel modus moderatius necessitatibus ad. Ceteros commune quaestio et sed, cum vocibus scaevola senserit eu. Tale graece quaeque nec no.
+	</p>
+
+        </div>
+        </div>
+        </div>
+  </div>
+    
+    <hr class="featurette-divider">
+        <!-- Second Featurette -->
         <div class="featurette" id="record">
         <h2>The Senate Voting Record</h2>
         <div class="info-bg">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus lacus nec turpis dapibus, quis facilisis libero posuere. Duis non convallis tellus. Cras ullamcorper volutpat velit at efficitur. Sed euismod nulla quam. Duis venenatis nibh nec velit volutpat ultricies. Nulla facilisi. Vestibulum laoreet vitae tortor vitae sodales. Praesent eget vulputate sem, vitae vestibulum ipsum. Vivamus tristique mollis nisi. Cras turpis ligula, varius nec placerat sed, pulvinar in elit. Quisque id urna turpis. Vestibulum tincidunt libero nec arcu aliquet tincidunt. Nunc dictum mi in finibus tempor. 
+        <div class="row">
+        <div class="col-lg-12">
+        <p>
+        <h2>Jake Milich voted for <strong>in favor</strong> of:</h2>
+			<h3>Senate Resolution 48-03</h3>
+			Resolution in support of Florida Senate Bill 520 and House Bill 793 which amends Florida Statute 1009.531 to extend Florida Bright Futures Scholarship eligibility to high 
+            school graduates who fulfill full-time religious or service obligations before attending college. 
+
+			<h3>Senate Resolution 48-05</h3>
+			Resolution which lowers the amount of unexcused absences that student senators may accumulate per semester before being resigned from senate. 
+			<h3>Senate Resolution 48-08</h3>
+			Resolution in support of repealing Board of Governors Regulation 6.016 which requires university students to earn 9 credit hours during summer semesters. 
+        </p>
+   
+        </div>
         </div>
         </div>
   </div>
-  
   <hr class="featurette-divider">
-        <!-- fourth Featurette --><div class="container">
+        <!-- fourth Featurette -->
         <div class="featurette" id="suggestions">
-        <h2>The Senate Voting Record</h2>
-        <div class="info-bg">
-        <form class="form-horizontal" role="form" method="post" action="index.php">
-    <div class="form-group">
-        <label for="name" class="col-sm-2 control-label">Name</label>
-        <div class="col-sm-10">
-            <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
-            <?php echo "<p class='text-danger'>$errName</p>";?>
-        </div>
-    </div>
-    <div class="form-group">
-        <label for="email" class="col-sm-2 control-label">Email</label>
-        <div class="col-sm-10">
-            <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="<?php echo htmlspecialchars($_POST['email']); ?>">
-            <?php echo "<p class='text-danger'>$errEmail</p>";?>
-        </div>
-    </div>
-    <div class="form-group">
-        <label for="message" class="col-sm-2 control-label">Message</label>
-        <div class="col-sm-10">
-            <textarea class="form-control" rows="4" name="message"><?php echo htmlspecialchars($_POST['message']);?></textarea>
-            <?php echo "<p class='text-danger'>$errMessage</p>";?>
-        </div>
-    </div>
-    <div class="form-group">
-        <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
-        <div class="col-sm-10">
-            <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
-            <?php echo "<p class='text-danger'>$errHuman</p>";?>
-        </div>
-    </div>
-    <div class="form-group">
-        <div class="col-sm-10 col-sm-offset-2">
-            <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
-        </div>
-    </div>
-    <div class="form-group">
-        <div class="col-sm-10 col-sm-offset-2">
-            <?php echo $result; ?>    
-        </div>
-    </div>
-</form> 
-
-
-        </div>
-        </div>
-  </div>
+        <h2>Got Platform Suggestions?</h2>
+        <div class="col-lg-12">
+       <div class="row">
+       <div class="cognito">
+<script src="https://services.cognitoforms.com/s/3ggSM5lIN0au-IAONsQJLw"></script>
+<script>Cognito.load("forms", { id: "1" });</script>
+</div>
+       </div></div></div>
+        
+        
+  <hr class="featurette-divider">
   
-
+  
+        <!-- fifth Featurette -->
+        
+<div class="featurette" id="find us">
+        <h2>Find us on social media!</h2>
+       	<div class="col-lg-9 col-lg-offset-3"><div class="row">
+        
+           <a href="https://instagram.com/JakeandElaine"><i class="col-md-4 fa fa-instagram fa-5x"></i></a>
+                    <a href="https://www.facebook.com/jakeandelaine/"><i class="col-md-4 fa fa-facebook fa-5x"></i></a>
+                    <a href="https://twitter.com/JakeandElaine"><i class="col-md-4 fa fa-twitter fa-5x"></i></a>
+        </div></div>
   
 <!-- Footer -->
         <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Jake & Elaine 2016</p>
-                    <i class="fa fa-instagram">asd</i> 
-                </div>
-            </div>
+          <div class="row">
+  <div class="col-sm-4"> </div>
+  <div class="col-sm-4"><p>Copyright &copy; Jake & Elaine 2016</p></div>
+  <div class="col-sm-4"> </div>
+</div>
       </footer>
 
     </div>
@@ -314,7 +303,7 @@ Elaine Sarlo</h2>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-</div>
+</div></div>
 </body>
 
 </html>
