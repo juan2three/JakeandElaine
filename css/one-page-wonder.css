@@ -61,12 +61,43 @@ padding-right: auto;
     margin: 80px 0;
 }
 
-.featurette {
+.featurette-about {
     overflow: hidden;
 	background-image:url(../Images/UCF_StudentUnion.jpg);
 	background-repeat: no-repeat;
 	align-items: center;
 }
+
+.featurette-platform {
+    overflow: hidden;
+	background-image:url(../Images/UCF_StudentUnion.jpg);
+	background-repeat: no-repeat;
+	align-items: center;
+}
+
+
+.featurette-endorsements {
+    overflow: hidden;
+	background-image:url(../Images/UCF_StudentUnion.jpg);
+	background-repeat: no-repeat;
+	align-items: center;
+}
+
+.featurette-senate {
+    overflow: hidden;
+	background-image:url(../Images/UCF_StudentUnion.jpg);
+	background-repeat: no-repeat;
+	align-items: center;
+}
+
+.featurette-suggestions {
+    overflow: hidden;
+	background-image:url(../Images/UCF_StudentUnion.jpg);
+	background-repeat: no-repeat;
+	align-items: center;
+}
+
+
 
 .featurette-image.pull-left {
     margin-right: 40px;
