@@ -12,6 +12,10 @@ border: 20px solid #fff;
     background: #fff;
 }
 
+.featurette1{
+backgroun: url("http://politicalscience.cos.ucf.edu/wp-content/uploads/2012/09/UCF_StudentUnion.jpg");
+}
+
 .info-bg{
 background:#000;
 padding:1em;
