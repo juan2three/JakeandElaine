@@ -32,11 +32,12 @@ padding-right: auto;
     display: block;
     width: 100%;
     text-align: center;
-    background: url('../Images/banner.jpg') no-repeat center center scroll;
+    background: url('../Images/IMG_3536.jpg') no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+	align-items:center;
 }
 
 .headline {
