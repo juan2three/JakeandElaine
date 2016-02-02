@@ -66,28 +66,36 @@ padding-right: auto;
 	background-image:url(../Images/UCF_StudentUnion.jpg);
 	background-repeat: no-repeat;
 	align-items: center;
+	background-size: cover;
+	width:100%;
 }
 
 .featurette-platform {
     overflow: hidden;
-	background-image:url(../Images/UCF_StudentUnion.jpg);
+	background-image:url(../Images/jakeandelaine.jpg);
 	background-repeat: no-repeat;
 	align-items: center;
+	background-size: cover;
+	width:100%;
 }
 
 
 .featurette-endorsements {
     overflow: hidden;
-	background-image:url(../Images/UCF_StudentUnion.jpg);
+	background-size: cover;
+	background-image:url(../Images/IMG_3565.jpg);
 	background-repeat: no-repeat;
 	align-items: center;
+	width:100%;
 }
 
 .featurette-senate {
     overflow: hidden;
-	background-image:url(../Images/UCF_StudentUnion.jpg);
+	background-image:url(../Images/IMG_3495.jpg);
 	background-repeat: no-repeat;
 	align-items: center;
+	background-size: cover;
+	width:100%;
 }
 
 .featurette-suggestions {
