@@ -63,11 +63,12 @@ padding-right: auto;
 
 .featurette-about {
     overflow: hidden;
-	background-image:url(../Images/UCF_StudentUnion.jpg);
+	background-image:url(../Images/IMG_3536.jpg);
 	background-repeat: no-repeat;
 	align-items: center;
 	background-size: cover;
 	width:100%;
+	padding-bottom: 100px;
 }
 
 .featurette-platform {
@@ -103,6 +104,8 @@ padding-right: auto;
 	background-image:url(../Images/UCF_StudentUnion.jpg);
 	background-repeat: no-repeat;
 	align-items: center;
+	background-size: cover;
+	width:100%;
 }
 
 

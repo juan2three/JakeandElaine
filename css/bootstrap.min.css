@@ -240,7 +240,8 @@ th {
         page-break-after: avoid
     }
     .navbar {
-        display: none
+        display: none;
+		width:100%;
     }
     .btn>.caret,
     .dropup>.btn>.caret {
@@ -1085,7 +1086,8 @@ body {
     font-size: 14px;
     line-height: 1.42857143;
     color: #333;
-    background-color: #fff
+    background-color: #fff;
+	overflow-x: hidden;
 }
 button,
 input,
