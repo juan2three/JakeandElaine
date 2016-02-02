@@ -87,7 +87,7 @@ padding-right: auto;
 .featurette-endorsements {
     overflow: hidden;
 	background-size: cover;
-	background-image:url(../Images/UCF-banner.jpg);
+	background-image:url(../Images/UCF_StudentUnion.jpg);
 	background-repeat: no-repeat;
 	vertical-align: top;
 	width:100%;
@@ -109,7 +109,7 @@ padding-right: auto;
 
 .featurette-suggestions {
     overflow: hidden;
-	background-image:url(../Images/UCF_StudentUnion.jpg);
+	background-image:url(../Images/UCF-banner.jpg);
 	background-repeat: no-repeat;
 	align-items: center;
 	background-size: cover;
