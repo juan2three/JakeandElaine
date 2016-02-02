@@ -78,16 +78,20 @@ padding-right: auto;
 	align-items: center;
 	background-size: cover;
 	width:100%;
+	background-size:100% auto;
 }
 
 
 .featurette-endorsements {
     overflow: hidden;
 	background-size: cover;
-	background-image:url(../Images/IMG_3565.jpg);
+	background-image:url(../Images/UCF-banner.jpg);
 	background-repeat: no-repeat;
-	align-items: center;
+	vertical-align: top;
 	width:100%;
+	padding-top: 80px;
+	padding-bottom:80px;
+	background-size:100% auto;
 }
 
 .featurette-senate {
@@ -97,6 +101,7 @@ padding-right: auto;
 	align-items: center;
 	background-size: cover;
 	width:100%;
+	background-size:100% auto;
 }
 
 .featurette-suggestions {
