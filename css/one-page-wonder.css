@@ -220,7 +220,8 @@ footer {
 		
 	.featurette-senate {
 		background: none;}
-	
+	.info-bg{
+background:black;}
 }
 
 @media(max-width:668px) {
@@ -249,7 +250,8 @@ footer {
 		
 	.featurette-senate {
 		background: none;}
-	
+	.info-bg{
+background:black;}
 }
 
 @media(max-width:640px) {
@@ -278,7 +280,8 @@ footer {
 		
 	.featurette-senate {
 		background: none;}
-	
+	.info-bg{
+background:black;}
 }
 
 @media(max-width:375px) {
@@ -314,4 +317,6 @@ footer {
 	.featurette-senate {
 		background: none;}
 	
+	.info-bg{
+background:black;}
 }
