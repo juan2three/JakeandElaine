@@ -15,13 +15,14 @@ border: 20px solid #fff;
 
 .info-bg{
 background:rgba(0,0,0,.7);;
-padding:2em;
+padding:3em;
 display:inline-block;
 color:#FFf;
 padding-right: auto;
     padding-left: auto;
     margin-right: auto;
     margin-left: 10px;
+width: 100%;
 }
 .info-bg h2{
 	color:#FFC600;
@@ -93,8 +94,7 @@ padding-right: auto;
 	width:100%;
 	padding-top: 80px;
 	padding-bottom:80px;
-	padding-left:100px;
-	padding-right:100px;
+
 
 }
 
