@@ -6,7 +6,7 @@
 
 body {
     margin-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-	font-size:18px;
+	font-size:16px;
 }
 .stuff{
 border: 20px solid #fff;
@@ -73,14 +73,13 @@ padding-right: auto;
 	padding-bottom: 150px;
 }
 
-.featurette-platform {
+.featurette-platform{
     overflow: hidden;
 	background-image:url(../Images/jakeandelaine.jpg);
 	background-repeat: no-repeat;
 	align-items: center;
 	background-size: cover;
 	width:100%;
-	background-size:100% auto;
 	padding-bottom: 150px;
 }
 
@@ -94,7 +93,7 @@ padding-right: auto;
 	width:100%;
 	padding-top: 80px;
 	padding-bottom:80px;
-	background-size:100% auto;
+
 }
 
 .featurette-senate {
@@ -104,7 +103,6 @@ padding-right: auto;
 	align-items: center;
 	background-size: cover;
 	width:100%;
-	background-size:100% auto;
 	padding-bottom: 150px;
 }
 
@@ -203,6 +201,24 @@ footer {
     .featurette-heading {
         font-size: 25px;
     }
+	.body{
+		overflow-x: hidden;
+	}
+	.featurette-suggestions {
+		background: none;}
+		
+	.featurette-about {
+	background: none;}
+	
+	.featurette-platform {
+		background: none;}
+	
+	.featurette-endorsements {
+		background: none;}
+		
+	.featurette-senate {
+		background: none;}
+	
 }
 
 @media(max-width:668px) {
@@ -217,6 +233,21 @@ footer {
     .featurette-divider {
         margin: 30px 0;
     }
+	.featurette-suggestions {
+		background: none;}
+		
+	.featurette-about {
+	background: none;}
+	
+	.featurette-platform {
+		background: none;}
+	
+	.featurette-endorsements {
+		background: none;}
+		
+	.featurette-senate {
+		background: none;}
+	
 }
 
 @media(max-width:640px) {
@@ -231,6 +262,21 @@ footer {
     .headline h2 {
         font-size: 30px;
     }
+	.featurette-suggestions {
+		background: none;}
+		
+	.featurette-about {
+	background: none;}
+	
+	.featurette-platform {
+		background: none;}
+	
+	.featurette-endorsements {
+		background: none;}
+		
+	.featurette-senate {
+		background: none;}
+	
 }
 
 @media(max-width:375px) {
@@ -251,4 +297,19 @@ footer {
         margin-bottom: 10px;
         margin-left: 0;
     }
+	.featurette-suggestions {
+		background: none;}
+		
+	.featurette-about {
+	background: none;}
+	
+	.featurette-platform {
+		background: none;}
+	
+	.featurette-endorsements {
+		background: none;}
+		
+	.featurette-senate {
+		background: none;}
+	
 }
