@@ -1,0 +1,23 @@
+# Site settings
+title: Jake Milich & Elaine Sarlo; UCF SGA Spring 2016 Elections
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Welcome to the Jake Milich and Elaine Sarlo 2016 SGA Spring elections for the university of central florida UCF
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+
+
+# Build settings
+markdown: kramdown
+
+sass:
+  # loading path from site root
+  # default to _sass
+  sass_dir: bootstrap-sass/assets/stylesheets
+
+  # style : nested (default), compact, compressed, expanded
+  #         :nested, :compact, :compressed, :expanded also works
+  # see http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  # on a typical twitter bootstrap stats are :
+  # nested 138,7kB, compact 129,1kB, expanded 135,9 kB, compressed 122,4 kB
+  style: compressed
