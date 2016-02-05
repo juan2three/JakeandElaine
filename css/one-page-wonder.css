@@ -377,12 +377,12 @@ background:black;}
 .fa-twitter{
 	color: #FFBE00;
 }
-.fa-facebook: hover{
+a.fa-facebook: hover{
 	color: #FFA600;
 }
-.fa-instagram: hover{
+a.fa-instagram: hover{
 	color: #FFA600;
 }
-.fa-twitter: hover{
+a.fa-twitter: hover{
 	color: #FFA600;
 }

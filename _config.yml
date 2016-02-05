@@ -1,10 +1,9 @@
 # Site settings
 title: Jake Milich & Elaine Sarlo; UCF SGA Spring 2016 Elections
-email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Welcome to the Jake Milich and Elaine Sarlo 2016 SGA Spring elections for the university of central florida UCF
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://www.jakeandelaine.com" # the base hostname & protocol for your site
 
 
 # Build settings
