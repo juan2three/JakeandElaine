@@ -43,8 +43,17 @@ width: 96%;
 }
 
 .headline {
-    padding: 120px 0;
+    padding: 130px 0;
+	width: 60%;
+	margin: auto;
 }
+.headline h3{
+
+	width: 45%;
+	margin: auto;
+	margin-bottom: 30px;
+}
+
 
 .headline h1 {
     font-size: 130px;
@@ -155,7 +164,7 @@ footer {
         font-size: 63px;
     }
 
-.headline h2 {
+.headline h3 {
         font-size: 30px;
     }
 
@@ -184,7 +193,7 @@ footer {
     .headline h2 {
         font-size: 50px;
     }
-	.headline h2 {
+	.headline h3 {
         font-size: 25px;
     }
 
@@ -256,7 +265,7 @@ background:black;}
     .headline h2 {
         font-size: 32px;
     }
-	.headline h2 {
+	.headline h3 {
         font-size: 15px;
     }
 
