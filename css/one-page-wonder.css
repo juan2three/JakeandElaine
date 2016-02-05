@@ -6,7 +6,7 @@
 
 body {
     margin-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-	font-size:16px;
+	font-size:15px;
 }
 .stuff{
 border: 20px solid #fff;
@@ -50,14 +50,20 @@ width: 96%;
     font-size: 130px;
 	color:#FFBE00;
     background: #000;
-    background: rgba(77,77,77,0.9);
+    background: rgba(77,77,77,0.7);
 }
 
 .headline h2 {
     font-size: 77px;
 	color:#D3D3D3;
     background: #fff;
-    background: rgba(77,77,77,0.9);
+    background: rgba(77,77,77,0.7);
+}
+.headline h3 {
+    font-size: 35px;
+	color:#FFF;
+    background: #fff;
+    background: rgba(77,77,77,0.7);
 }
 
 .featurette-divider {
@@ -149,6 +155,10 @@ footer {
         font-size: 63px;
     }
 
+.headline h2 {
+        font-size: 30px;
+    }
+
     .featurette-divider {
         margin: 50px 0;
     }
@@ -174,6 +184,9 @@ footer {
     .headline h2 {
         font-size: 50px;
     }
+	.headline h2 {
+        font-size: 25px;
+    }
 
     .featurette-divider {
         margin: 40px 0;
@@ -197,7 +210,10 @@ footer {
 }
 
 @media(max-width:768px) {
-    .container {
+    .body{
+		overflow-x: auto;
+	}
+	.container {
         margin: 0 15px;
     }
 
@@ -230,13 +246,20 @@ background:black;}
 }
 
 @media(max-width:668px) {
-    .headline h1 {
+    .body{
+		overflow-x: auto;
+	}
+	.headline h1 {
         font-size: 70px;
     }
 
     .headline h2 {
         font-size: 32px;
     }
+	.headline h2 {
+        font-size: 15px;
+    }
+
 
     .featurette-divider {
         margin: 30px 0;
@@ -260,7 +283,10 @@ background:black;}
 }
 
 @media(max-width:640px) {
-    .headline {
+    .body{
+		overflow-x: auto;
+	}
+	.headline {
         padding: 75px 0 25px 0;
     }
 
@@ -271,6 +297,10 @@ background:black;}
     .headline h2 {
         font-size: 30px;
     }
+	.headline h3 {
+        font-size: 15px;
+    }
+
 	.featurette-suggestions {
 		background: none;}
 		
@@ -293,6 +323,10 @@ background:black;}
     .featurette-divider {
         margin: 10px 0;
     }
+	
+	.body{
+		overflow-x: auto;
+	}
 
     .featurette-image {
         max-width: 100%;
