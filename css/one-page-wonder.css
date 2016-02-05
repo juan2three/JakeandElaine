@@ -369,20 +369,11 @@ background:black;}
 background:black;}
 }
 .fa-facebook{
-	color: #FFBE00;
+	color: #0000e6;
 }
 .fa-instagram{
-	color: #FFBE00;
+	color:  #0000e6;
 }
 .fa-twitter{
-	color: #FFBE00;
-}
-a.fa-facebook: hover{
-	color: #FFA600;
-}
-a.fa-instagram: hover{
-	color: #FFA600;
-}
-a.fa-twitter: hover{
-	color: #FFA600;
+	color:  #0000e6;
 }
