@@ -300,14 +300,14 @@ background:black;}
     }
 
     .headline h1 {
-        font-size: 60px;
+        font-size: 40px;
     }
 
     .headline h2 {
-        font-size: 30px;
+        font-size: 20px;
     }
 	.headline h3 {
-        font-size: 15px;
+        font-size: 10px;
     }
 
 	.featurette-suggestions {
