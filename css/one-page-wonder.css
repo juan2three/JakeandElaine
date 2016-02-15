@@ -383,3 +383,6 @@ background:black;}
 	padding-top:400px;
 	padding-bottom:50px;
 }
+.wrapper{
+overflow-x:hidden;
+}
