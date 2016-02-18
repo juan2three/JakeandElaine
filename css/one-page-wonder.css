@@ -31,15 +31,13 @@ width: 96%;
 	color:#FFC600;
 }
 .header-image {
-    display: block;
-    width: 100%;
-    text-align: center;
-    background: url('../Images/IMG_3536.jpg') no-repeat center center scroll;
+
+    text-align:center;
+    background: url('../Images/IMG_3536.jpg') center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
 	align-items:center;
+	padding-bottom:100px
 }
 
 .headline {
@@ -385,4 +383,56 @@ background:black;}
 }
 .wrapper{
 overflow-x:hidden;
+}
+.social-slide {
+	background-image: url('path/to/image.png');
+	height: 48px;
+	width: 48px;
+	margin: 10px;
+	float: left;
+	-webkit-transition: all ease 0.3s;
+	-moz-transition: all ease 0.3s;
+	-o-transition: all ease 0.3s;
+	-ms-transition: all ease 0.3s;
+	transition: all ease 0.3s;
+}
+.social-slide-right {
+	height: 48px;
+	width: 48px;
+	margin: 10px;
+	float: right;
+	-webkit-transition: all ease 0.3s;
+	-moz-transition: all ease 0.3s;
+	-o-transition: all ease 0.3s;
+	-ms-transition: all ease 0.3s;
+	transition: all ease 0.3s;
+}
+.social-slide-left {
+	height: 48px;
+	width: 48px;
+	margin: 10px;
+	float: left;
+	-webkit-transition: all ease 0.3s;
+	-moz-transition: all ease 0.3s;
+	-o-transition: all ease 0.3s;
+	-ms-transition: all ease 0.3s;
+	transition: all ease 0.3s;
+}
+.social-slide-right:hover {
+	background-position: 0px -48px;
+	box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.8);
+}
+.social-slide-left:hover {
+	background-position: 0px -48px;
+	box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.8);
+}
+.twitter-hover {
+	background-image: url('../Images/twitter-hover.png');
+}
+.facebook-hover {
+	background-image: url('../Images/facebook-hover.png');
+}
+
+.instagram-hover {
+	background-image: url('../Images/instagram-hover.png');
 }
