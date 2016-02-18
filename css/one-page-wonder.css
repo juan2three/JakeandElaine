@@ -436,3 +436,25 @@ overflow-x:hidden;
 .instagram-hover {
 	background-image: url('../Images/instagram-hover.png');
 }
+a:link {
+    color: #FFC600;
+	text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #FFC600;
+	text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #FFA933;
+	text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: #FFC600;
+	text-decoration: none;
+}
