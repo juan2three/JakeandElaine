@@ -33,12 +33,11 @@ width: 96%;
 .header-image {
 
     text-align:center;
-    background: url('../Images/IMG_3536.jpg') center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-	align-items:center;
-	padding-bottom:100px
+    background: url('../Images/IMG_3536.jpg')center center no-repeat;
+    background-size:contain;
+	padding-bottom:100px;
 }
+
 
 .headline {
     padding: 130px 0;
