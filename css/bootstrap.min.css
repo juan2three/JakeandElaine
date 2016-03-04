@@ -1304,7 +1304,7 @@ p {
 @media (min-width: 768px) {
     .lead {
         margin:auto;
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 200;
     line-height: 1.4
   ;
