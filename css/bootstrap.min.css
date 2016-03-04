@@ -1300,13 +1300,14 @@ p {
 }
 .lead {
     margin:auto;
-    font-siz: 50px;
+    font-size: 50px;
     font-weight: 200;
     line-height: 1.4
 }
 @media (min-width: 768px) {
     .lead {
-        font-size: 26px
+        font-size: 26px;
+        font-weight: 200;
     }
 }
 .small,
