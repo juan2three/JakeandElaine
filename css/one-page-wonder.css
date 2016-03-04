@@ -33,16 +33,43 @@ width: 96%;
 .header-image {
 
     text-align:center;
-    background: url('../Images/IMG_3536.jpg')center center no-repeat;
-    background-size:contain;
+    background: url('../Images/jakeandelaine.jpg')center center no-repeat;
+    background-size: 1800px 1200px, cover;
 	padding-bottom:200px;
+	    
+}
+.vote{
+	width: 20%;
+	padding-top: 20px;
+	paddint-bottom: 30px;
+	margin: auto;
+	background-color: rgba(0,0,0,0.7);
+
+}
+.vote-top{
+	margin:auto;
+	padding-bottom: 20px
 }
 
+.fight{
+	color:#FFBE00;
+	font-stretch:expanded;
+	font-size:29px;
+}
+.myucf{
+	color:#FFBE00;
+	font-stretch:expanded;
+	font-size:20px;
+}
+.learn{
+	font-size: 55px;
+	margin:auto;
+}
 .small-header {
     display: block;
     width: 100%;
     text-align: center;
-    background: url('../Images/IMG_3536.jpg') no-repeat center center scroll;
+    background: url('../Images/jakeandelaine.jpg') no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -57,30 +84,28 @@ width: 96%;
 }
 .headline h3{
 
-	width: 45%;
 	margin: auto;
-	margin-bottom: 30px;
 }
 
 
 .headline h1 {
-    font-size: 130px;
+    font-size: 30px;
 	color:#FFBE00;
-    background: #000;
-    background: rgba(77,77,77,0.7);
+	padding: 0px;
+	margin: auto;
 }
 
 .headline h2 {
-    font-size: 77px;
-	color:#D3D3D3;
-    background: #fff;
-    background: rgba(77,77,77,0.7);
+    font-size: 18px;
+	color:#fff;
+	padding:0px;
 }
 .headline h3 {
-    font-size: 35px;
+    font-size: 15px;
 	color:#FFF;
-    background: #fff;
-    background: rgba(77,77,77,0.7);
+	padding-top: 10px;
+
+
 }
 
 .featurette-divider {
@@ -100,7 +125,7 @@ width: 96%;
 
 .featurette-platform{
     overflow: hidden;
-	background-image:url(../Images/jakeandelaine.jpg);
+	background-image:url(../Images/IMG_3536.jpg);
 	background-repeat: no-repeat;
 	align-items: center;
 	background-size: cover;
@@ -165,15 +190,16 @@ footer {
 
 @media(max-width:1200px) {
     .headline h1 {
-        font-size: 140px;
+        font-size: 22px;
+		margin: auto;
     }
 
     .headline h2 {
-        font-size: 63px;
+        font-size: 16px;
     }
 
 .headline h3 {
-        font-size: 30px;
+        font-size: 15px;
     }
 
     .featurette-divider {

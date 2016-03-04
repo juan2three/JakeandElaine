@@ -62,7 +62,7 @@ dfn {
 }
 h1 {
     margin: .67em 0;
-    font-size: 2em
+    font-size: 1em
 }
 mark {
     color: #000;
@@ -1145,10 +1145,18 @@ img {
     border-radius: 50%
 }
 hr {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border: 0;
-    border-top: 1px solid #eee
+    border-top: 1px solid #ccc;
+
+}
+.vote hr{
+	margin: auto;
+    border: 0;
+    border-top: 1px solid #ccc;
+	width: 70%;
+	padding-top: 10px;
 }
 .sr-only {
     position: absolute;
@@ -1223,8 +1231,8 @@ h6 small {
 h1,
 h2,
 h3 {
-    margin-top: 20px;
-    margin-bottom: 10px
+    margin-top: 0px;
+    margin-bottom: 0px
 }
 .h1 .small,
 .h1 small,
