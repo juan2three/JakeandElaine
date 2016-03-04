@@ -217,6 +217,10 @@ footer {
     .featurette-heading {
         font-size: 35px;
     }
+	.learn{
+		font-size:30px;
+	}
+	
 }
 
 @media(max-width:991px) {
