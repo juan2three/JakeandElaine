@@ -1300,6 +1300,7 @@ p {
 }
 .lead {
     font-size: 26px;
+    text-align: center;
 }
 @media (min-width: 768px) {
     .lead {
@@ -1307,6 +1308,7 @@ p {
     font-size: 50px;
     font-weight: 200;
     line-height: 1.4
+    text-align: center;
   ;
     }
 }
