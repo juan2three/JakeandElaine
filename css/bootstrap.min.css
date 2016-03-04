@@ -1299,14 +1299,14 @@ p {
     margin: 0 0 10px
 }
 .lead {
-    margin:auto;
-    font-size: 100px;
-    font-weight: 200;
-    line-height: 1.4
+    font-size: 26px;
 }
 @media (min-width: 768px) {
     .lead {
-        font-size: 19px;
+        margin:auto;
+    font-size: 70px;
+    font-weight: 200;
+    line-height: 1.4
   ;
     }
 }
