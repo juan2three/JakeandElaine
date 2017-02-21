@@ -12,32 +12,36 @@
   ga('send', 'pageview');
 
 </script>
-<script>var $animation_elements = $('.animation-element');
-var $window = $(window);
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
 
-function check_if_in_view() {
-  var window_height = $window.height();
-  var window_top_position = $window.scrollTop();
-  var window_bottom_position = (window_top_position + window_height);
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
 
-  $.each($animation_elements, function() {
-    var $element = $(this);
-    var element_height = $element.outerHeight();
-    var element_top_position = $element.offset().top;
-    var element_bottom_position = (element_top_position + element_height);
+      // Store hash
+      var hash = this.hash;
 
-    //check to see if this current container is within viewport
-    if ((element_bottom_position >= window_top_position) &&
-      (element_top_position <= window_bottom_position)) {
-      $element.addClass('in-view');
-    } else {
-      $element.removeClass('in-view');
-    }
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
   });
-}
-
-$window.on('scroll resize', check_if_in_view);
-$window.trigger('scroll');</script>
+});
+  </script>
 <meta name="keywords" content="UCF SGA, Josh Bolona, Jad Shalhoub, SGA elections 2017,  University of central florida sga 2017, 2017">
     <meta name="description" content="This is the website for the campaign of Josh Bolona and Jad Shalhoub for the UCF SGA elections for spring of 2017...">
     <meta charset="utf-8">
@@ -79,7 +83,7 @@ $window.trigger('scroll');</script>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-               <img class="img-responsive visible-xs" src="./Images/Logo.png">
+               <img class="img-responsive visible-xs logo" src="./Images/JOSH%20&%20JAD%20Original.png">
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -115,9 +119,9 @@ $window.trigger('scroll');</script>
  <div class="small-header visible-xs visible-sm">
  <div class="headline">
             <div class="row hidden-xs">
-            <a href="https://www.facebook.com/jakeandelaine/"><div class="facebook-hover social-slide-right"></div></a>
-           <a href="https://instagram.com/JakeandElaine"><div class="instagram-hover social-slide-right"></div></a>
-            <a href="https://twitter.com/JakeandElaine"><div class="twitter-hover social-slide-right"></div></a>
+            <a href="https://www.facebook.com/joshandjad/"><div class="facebook-hover social-slide-right"></div></a>
+           <a href="https://instagram.com/joshandjad"><div class="instagram-hover social-slide-right"></div></a>
+            <a href="https://twitter.com/joshandjad"><div class="twitter-hover social-slide-right"></div></a>
             </div> 
                </div></div>
  
@@ -149,7 +153,7 @@ $window.trigger('scroll');</script>
         <div class="info-bg">
         <div class="row">
          <div class="col-md-2">
-            <img class="featurette-image img-circle img-responsive" src="Images/headshot1.jpg" alt="Josh Bolona" >
+            <img class="featurette-image img-circle img-responsive center-block" src="Images/headshot1.jpg" alt="Josh Bolona" >
             
             </div>
             <div class="col-md-4"><h2 class="featurette-heading">Josh Bolona</h2>
@@ -164,7 +168,7 @@ $window.trigger('scroll');</script>
                 </ul>
         </div>
         <div class="col-md-2">
-            <img class="featurette-image img-circle img-responsive" src="Images/headshot.jpg" alt="Jad Shalhoub">
+            <img class="featurette-image img-circle img-responsive center-block" src="Images/headshot.jpg" alt="Jad Shalhoub">
            
             </div>
             <div class="col-md-4"> <h2 class="featurette-heading">
