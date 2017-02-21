@@ -6,21 +6,23 @@
 
 body {
     margin-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+	font-size:15px;
 }
 .stuff{
 border: 20px solid #fff;
     background: #fff;
 }
 
-.featurette1{
-background-image: url("http://politicalscience.cos.ucf.edu/wp-content/uploads/2012/09/UCF_StudentUnion.jpg");
-}
-
 .info-bg{
-background:#000;
-padding:1em;
+background:rgba(0,0,0,.7);;
+padding:2em;
 display:inline-block;
 color:#FFf;
+padding-right: auto;
+    padding-left: auto;
+    margin-right: auto;
+    margin-left: 10px;
+width: 96%;
 }
 .info-bg h2{
 	color:#FFC600;
@@ -29,46 +31,146 @@ color:#FFf;
 	color:#FFC600;
 }
 .header-image {
+
+    text-align:center;
+    background: url('../Images/joshandjad.jpg')center center no-repeat;
+    background-size: cover;
+	padding-bottom:200px;
+	    
+}
+.vote{
+	width: 20%;
+	padding-top: 20px;
+	paddint-bottom: 30px;
+	margin: auto;
+	background-color: rgba(0,0,0,0.7);
+
+}
+.vote-top{
+	margin:auto;
+	padding-bottom: 20px
+}
+
+.fight{
+	color:#FFBE00;
+	font-stretch:expanded;
+	font-size:29px;
+}
+.myucf{
+	color:#FFBE00;
+	font-stretch:expanded;
+	font-size:20px;
+}
+.learn{
+	font-size: 55px;
+	margin:auto;
+}
+.small-header {
     display: block;
     width: 100%;
     text-align: center;
-    background: url('../Images/banner.jpg') no-repeat center center scroll;
+    background: url('../Images/joshandjad.jpg') no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-        -webkit-animation: fadein 2.5s; /* Safari and Chrome */
-    -moz-animation: fadein 2.5s; /* Firefox */
-    -ms-animation: fadein 2.5s; /* Internet Explorer */
-    -o-animation: fadein 2.5s; /* Opera */
-    animation: fadein 2.5s;
+	padding-top: 65px;
+	
+}
+.headline {
+    padding: 130px 0;
+	width: 60%;
+	margin: auto;
+}
+.headline h3{
+
+	margin: auto;
 }
 
-.headline {
-    padding: 120px 0;
-}
 
 .headline h1 {
-    font-size: 130px;
+    font-size: 30px;
 	color:#FFBE00;
-    background: #000;
-    background: rgba(77,77,77,0.9);
+	padding: 0px;
+	margin: auto;
 }
 
 .headline h2 {
-    font-size: 77px;
-	color:#D3D3D3;
-    background: #fff;
-    background: rgba(77,77,77,0.9);
+    font-size: 18px;
+	color:#fff;
+	padding:0px;
+}
+.headline h3 {
+    font-size: 15px;
+	color:#FFF;
+	padding-top: 10px;
+
+
 }
 
 .featurette-divider {
     margin: 80px 0;
 }
 
-.featurette {
+.featurette-about {
     overflow: hidden;
+	background-image:url(../Images/stadium_night.jpg);
+	background-repeat: no-repeat;
+	align-items: center;
+	background-size: cover;
+	width:100%;
+	padding-bottom: 90px;
+	padding-top: 50px;
 }
+
+.featurette-platform{
+    overflow: hidden;
+	background-image:url(../Images/IMG_2439.JPG);
+	background-repeat: no-repeat;
+	align-items: center;
+	background-size: cover;
+	width:100%;
+	padding-bottom: 90px;
+	padding-top: 60px;
+}
+
+
+.featurette-endorsements {
+    overflow: hidden;
+	background-size: cover;
+	background-image:url(../Images/UCF_StudentUnion.jpg);
+	background-repeat: no-repeat;
+	vertical-align: top;
+	width:100%;
+	padding-top: 50px;
+	padding-bottom:80px;
+
+
+}
+
+.featurette-senate {
+    overflow: hidden;
+	background-image:url(../Images/banner.jpg);
+	background-repeat: no-repeat;
+	align-items: center;
+	background-size: cover;
+	width:100%;
+	padding-bottom: 100px;
+	padding-top: 50px;
+}
+
+.featurette-suggestions {
+    overflow: hidden;
+	background-image:url(../Images/UCF-banner.jpg);
+	background-repeat: no-repeat;
+	align-items: center;
+	background-size: cover;
+	width:100%;
+	padding-bottom: 120px;
+	padding-top: 50px;
+}
+
+
 
 .featurette-image.pull-left {
     margin-right: 40px;
@@ -88,11 +190,16 @@ footer {
 
 @media(max-width:1200px) {
     .headline h1 {
-        font-size: 140px;
+        font-size: 22px;
+		margin: auto;
     }
 
     .headline h2 {
-        font-size: 63px;
+        font-size: 16px;
+    }
+
+.headline h3 {
+        font-size: 15px;
     }
 
     .featurette-divider {
@@ -110,6 +217,10 @@ footer {
     .featurette-heading {
         font-size: 35px;
     }
+	.learn{
+		font-size:30px;
+	}
+	
 }
 
 @media(max-width:991px) {
@@ -119,6 +230,9 @@ footer {
 
     .headline h2 {
         font-size: 50px;
+    }
+	.headline h3 {
+        font-size: 25px;
     }
 
     .featurette-divider {
@@ -143,7 +257,10 @@ footer {
 }
 
 @media(max-width:768px) {
-    .container {
+    .body{
+		overflow-x: auto;
+	}
+	.container {
         margin: 0 15px;
     }
 
@@ -154,40 +271,109 @@ footer {
     .featurette-heading {
         font-size: 25px;
     }
+	.body{
+		overflow-x: hidden;
+	}
+	.featurette-suggestions {
+		background: none;}
+		
+	.featurette-about {
+	background: none;}
+	
+	.featurette-platform {
+		background: none;}
+	
+	.featurette-endorsements {
+		background: none;}
+		
+	.featurette-senate {
+		background: none;}
+	.info-bg{
+background:black;}
 }
 
 @media(max-width:668px) {
-    .headline h1 {
+    .body{
+		overflow-x: auto;
+	}
+	.headline h1 {
         font-size: 70px;
     }
 
     .headline h2 {
         font-size: 32px;
     }
+	.headline h3 {
+        font-size: 15px;
+    }
+
 
     .featurette-divider {
         margin: 30px 0;
     }
+	.featurette-suggestions {
+		background: none;}
+		
+	.featurette-about {
+	background: none;}
+	
+	.featurette-platform {
+		background: none;}
+	
+	.featurette-endorsements {
+		background: none;}
+		
+	.featurette-senate {
+		background: none;}
+	.info-bg{
+background:black;}
 }
 
 @media(max-width:640px) {
-    .headline {
+    .body{
+		overflow-x: auto;
+	}
+	.headline {
         padding: 75px 0 25px 0;
     }
 
     .headline h1 {
-        font-size: 60px;
+        font-size: 40px;
     }
 
     .headline h2 {
-        font-size: 30px;
+        font-size: 20px;
     }
+	.headline h3 {
+        font-size: 10px;
+    }
+
+	.featurette-suggestions {
+		background: none;}
+		
+	.featurette-about {
+	background: none;}
+	
+	.featurette-platform {
+		background: none;}
+	
+	.featurette-endorsements {
+		background: none;}
+		
+	.featurette-senate {
+		background: none;}
+	.info-bg{
+background:black;}
 }
 
 @media(max-width:375px) {
     .featurette-divider {
         margin: 10px 0;
     }
+	
+	.body{
+		overflow-x: auto;
+	}
 
     .featurette-image {
         max-width: 100%;
@@ -202,33 +388,199 @@ footer {
         margin-bottom: 10px;
         margin-left: 0;
     }
+	.featurette-suggestions {
+		background: none;}
+		
+	.featurette-about {
+	background: none;}
+	
+	.featurette-platform {
+		background: none;}
+	
+	.featurette-endorsements {
+		background: none;}
+		
+	.featurette-senate {
+		background: none;}
+	
+	.info-bg{
+background:black;}
+	.learn{
+		font-size:30px;
+	}
+	
 }
-    
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+.fa-facebook{
+	color: #1a1aff;
+	padding-top:400px;
+	padding-bottom:50px;
+}
+.fa-instagram{
+	color:  #1a1aff;
+	padding-top:400px;
+	padding-bottom:50px;
+}
+.fa-twitter{
+	color:  #1a1aff;
+	padding-top:400px;
+	padding-bottom:50px;
+}
+.wrapper{
+overflow-x:hidden;
+}
+.social-slide {
+	background-image: url('path/to/image.png');
+	height: 48px;
+	width: 48px;
+	margin: 10px;
+	float: left;
+	-webkit-transition: all ease 0.3s;
+	-moz-transition: all ease 0.3s;
+	-o-transition: all ease 0.3s;
+	-ms-transition: all ease 0.3s;
+	transition: all ease 0.3s;
+}
+.social-slide-right {
+	height: 48px;
+	width: 48px;
+	margin: 10px;
+	float: right;
+	-webkit-transition: all ease 0.3s;
+	-moz-transition: all ease 0.3s;
+	-o-transition: all ease 0.3s;
+	-ms-transition: all ease 0.3s;
+	transition: all ease 0.3s;
+}
+.social-slide-left {
+	height: 48px;
+	width: 48px;
+	margin: 10px;
+	float: left;
+	-webkit-transition: all ease 0.3s;
+	-moz-transition: all ease 0.3s;
+	-o-transition: all ease 0.3s;
+	-ms-transition: all ease 0.3s;
+	transition: all ease 0.3s;
+}
+.social-slide-right:hover {
+	background-position: 0px -48px;
+	box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.8);
+}
+.social-slide-left:hover {
+	background-position: 0px -48px;
+	box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.8);
+}
+.twitter-hover {
+	background-image: url('../Images/twitter-hover.png');
+}
+.facebook-hover {
+	background-image: url('../Images/facebook-hover.png');
 }
 
-/* Firefox */
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+.instagram-hover {
+	background-image: url('../Images/instagram-hover.png');
+}
+a:link {
+    color: #FFC600;
+	text-decoration: none;
 }
 
-/* Safari and Chrome */
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+/* visited link */
+a:visited {
+    color: #FFC600;
+	text-decoration: none;
 }
 
-/* Internet Explorer */
-@-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}​
+/* mouse over link */
+a:hover {
+    color: #FFA933;
+	text-decoration: none;
+}
 
-/* Opera */
-@-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}​
+/* selected link */
+a:active {
+    color: #FFC600;
+	text-decoration: none;
+}
+
+
+
+.animation-element {
+  position: relative;
+  width: 100%;
+  margin: 0% 1.33 2.66% 1.33%;
+  float: left;
+}
+/*3 grid layout*/
+
+.animation-element:nth-of-type(3n-2) {
+  width: 100%;
+  margin: 0% 1.375% 2.75% 0%;
+  clear: left;
+}
+
+.animation-element:nth-of-type(3n-1) {
+  width: 100%;
+  margin: 0% 1.375% 2.75% 1.375%;
+}
+
+.animation-element:nth-of-type(3n-0) {
+  width: 100%;
+  margin: 0% 0% 2.75% 1.375%;
+  clear: right;
+}
+/*bounce up animation for the subject*/
+
+.bounce-up .subject {
+  opacity: 0;
+  -moz-transition: all 700ms ease-out;
+  -webkit-transition: all 700ms ease-out;
+  -o-transition: all 700ms ease-out;
+  transition: all 700ms ease-out;
+  -moz-transform: translate3d(0px, 200px, 0px);
+  -webkit-transform: translate3d(0px, 200px, 0px);
+  -o-transform: translate(0px, 200px);
+  -ms-transform: translate(0px, 200px);
+  transform: translate3d(0px, 200, 0px);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.bounce-up.in-view .subject {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+
+/*clearfixes*/
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+@media screen and (max-width: 678px) {
+  .main-container {
+    margin: 20px 15px;
+  }
+  .animation-element,
+  .animation-element:nth-of-type(3n-1),
+  .animation-element:nth-of-type(3n-2),
+  .animation-element:nth-of-type(3n-0) {
+    width: 100%;
+    margin: 0px 0px 30px 0px;
+  }
+}
+.logo{
+    width: 35%;
+    margin-left: 33%
+} 
